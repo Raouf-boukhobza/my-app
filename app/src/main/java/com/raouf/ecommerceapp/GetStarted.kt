@@ -6,11 +6,14 @@ import androidx.compose.foundation.layout.Arrangement
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -47,34 +50,53 @@ fun Getstarted(){
                 .background(
                     brush = Brush.horizontalGradient(
                         colors = listOf(
-                             Orange.copy(0.75f),
-                             red
+                            Orange.copy(0.8f),
+                            red
                         ),
-                        400f
+                        600f
                     )
                 )
         ){
             Column(
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(vertical = 12.dp, horizontal = 25.dp),
+                    .padding(horizontal = 25.dp),
                 horizontalAlignment = Alignment.Start,
                 verticalArrangement = Arrangement.Center
             ) {
+                Spacer(modifier = Modifier.fillMaxSize(0.5f))
                 Text(
-
                     text = "Style Over Fashion",
                     color = Color.White,
-                    fontSize = 38.sp,
+                    fontSize = 34.sp,
+                    lineHeight = 40.sp,
                     fontWeight = FontWeight.Bold,
-                    modifier = Modifier.fillMaxWidth(0.6f)
+                    modifier = Modifier.fillMaxWidth(0.55f)
+
                 )
                 Text(
                     text = stringResource(id = R.string.label) ,
                     color = Color.White,
-                    fontSize = 16.sp
+                    fontSize = 18.sp,
+
+                    modifier=Modifier.padding(vertical = 10.dp)
+                        .fillMaxHeight(0.3f)
+
 
                 )
+                Button(
+                    onClick = { /*TODO*/ },
+                    modifier = Modifier.fillMaxWidth()
+                        .padding(top = 30.dp),
+                    colors = ButtonDefaults.buttonColors(Color.Black)
+                ) {
+                    Text(
+                        text = "Get Started",
+                        fontSize = 22.sp,
+
+
+                    )
+                }
             }
         }
 
