@@ -1,4 +1,4 @@
-package com.raouf.ecommerceapp.ui.theme
+package com.raouf.ecommerceapp
 
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
@@ -23,9 +23,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
-import com.raouf.ecommerceapp.R
+import com.raouf.ecommerceapp.ui.theme.red
 
-
+@Preview(showSystemUi = true)
 @Composable
 fun min_page(){
     Scaffold(
