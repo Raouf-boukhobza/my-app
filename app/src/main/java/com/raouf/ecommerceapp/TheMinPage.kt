@@ -92,3 +92,15 @@ fun Myicon(
 
     }
 }
+@Preview
+@Composable
+fun discountview(){
+
+}
+
+@Preview
+@Composable
+fun bottomappbar(){
+   val selecteditem : Boolean
+    val isselected  : Boolean
+}
