@@ -2,5 +2,7 @@
     <string name="app_name">Ecommerce app</string>
     <string name="label">This shoe is the perfect choice for anyone looking for a style and comfort all in one .
         with a modern and elegant design , its has premium</string>
-
+    <string name="enter_account">Enter Your Account</string>
+    <string name="login_label">Lorem ipsun dolor sit amet,consectetur adipisicing elit,
+        sed do eiusmod tempor  incididunt ut labore et. </string>
 </resources>
