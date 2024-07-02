@@ -26,12 +26,15 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.raouf.ecommerceapp.ui.theme.Orange
 import com.raouf.ecommerceapp.ui.theme.red
 
-@Preview(showSystemUi = true)
+
 @Composable
-fun Getstarted(){
+fun Getstarted(
+    navController: NavController
+){
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -79,22 +82,24 @@ fun Getstarted(){
                     color = Color.White,
                     fontSize = 18.sp,
 
-                    modifier=Modifier.padding(vertical = 10.dp)
+                    modifier= Modifier
+                        .padding(vertical = 10.dp)
                         .fillMaxHeight(0.3f)
 
 
                 )
                 Button(
-                    onClick = { /*TODO*/ },
-                    modifier = Modifier.fillMaxWidth()
+                    onClick = {
+                            navController.navigate(route = Screen.loginpage.name)
+                              },
+                    modifier = Modifier
+                        .fillMaxWidth()
                         .padding(top = 30.dp),
                     colors = ButtonDefaults.buttonColors(Color.Black)
                 ) {
                     Text(
                         text = "Get Started",
                         fontSize = 22.sp,
-
-
                     )
                 }
             }

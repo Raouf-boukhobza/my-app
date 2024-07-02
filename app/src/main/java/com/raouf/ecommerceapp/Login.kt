@@ -35,6 +35,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -52,11 +53,12 @@ import com.raouf.ecommerceapp.ui.theme.grey
 import com.raouf.ecommerceapp.ui.theme.orange_red
 
 
-@Preview(showSystemUi = true)
+
+@Preview(showBackground = true)
 @Composable
 fun Loginpage(){
     Column(
-        modifier = Modifier
+        modifier =Modifier
             .fillMaxSize()
             .padding(10.dp)
 
